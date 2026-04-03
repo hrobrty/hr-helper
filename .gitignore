@@ -30,3 +30,6 @@ dist-ssr/
 
 # Coverage
 coverage/
+
+# Rules
+coding-rules.md
