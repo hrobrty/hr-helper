@@ -1,0 +1,5 @@
+{
+  "name": "HR 抽獎與分組工具",
+  "description": "提供 HR 快速匯入名單、進行獎項抽獎（含動畫）以及自動分組功能的專業工具。",
+  "requestFramePermissions": []
+}
