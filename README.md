@@ -6,15 +6,33 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/fc88e286-6631-4874-81e8-6fa49c0aef83
+View your app in AI Studio: [AI Studio Link](https://ai.studio/apps/fc88e286-6631-4874-81e8-6fa49c0aef83)
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js (v18+)
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Set the `GEMINI_API_KEY` in `.env.local` to your Gemini API key.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+
+This project uses [GitHub Actions](.github/workflows/deploy.yml) (`Deploy to GitHub Pages`) to automatically trigger a build and deployment when new commits are pushed to the `main` branch. 
+
+- To enable it, navigate to your GitHub repository -> **Settings** -> **Pages**.
+- Under **Build and deployment**, set **Source** to **GitHub Actions**.
+- Push changes to the `main` branch to trigger a deploy.
+
+## Project Configurations
+- **.gitignore:** Pre-configured rules ensure you do not commit unnecessary files like `node_modules`, `dist` build cache, `.env` files with secret keys, and system logs.
